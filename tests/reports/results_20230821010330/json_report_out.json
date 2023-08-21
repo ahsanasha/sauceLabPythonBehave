@@ -1,0 +1,311 @@
+[
+{
+  "description": [
+    "As a user, I want to able to sign in",
+    "SO that I can access all features"
+  ],
+  "elements": [
+    {
+      "keyword": "Background",
+      "location": "tests/frontend/login/login.feature:7",
+      "name": "",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "tests/frontend/login/login.feature:8",
+          "name": "user go to login page",
+          "step_type": "given"
+        }
+      ],
+      "type": "background"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "tests/frontend/login/login.feature:11",
+      "name": "Login with valid credential",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "tests/frontend/login/login.feature:8",
+          "match": {
+            "arguments": [],
+            "location": "tests/steps/webcommonStep.py:6"
+          },
+          "name": "user go to login page",
+          "result": {
+            "duration": 5.299732208251953,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "tests/frontend/login/login.feature:12",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/login/steps/login_step.py:5"
+          },
+          "name": "user enters the username",
+          "result": {
+            "duration": 0.11778569221496582,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/login/login.feature:13",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/login/steps/login_step.py:10"
+          },
+          "name": "user enters the password",
+          "result": {
+            "duration": 0.08551812171936035,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/login/login.feature:14",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/login/steps/login_step.py:15"
+          },
+          "name": "user click login button",
+          "result": {
+            "duration": 0.08649277687072754,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "tests/frontend/login/login.feature:15",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/login/steps/login_step.py:20"
+          },
+          "name": "user should be navigated to the dashboard",
+          "result": {
+            "duration": 0.03241419792175293,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "tcId001"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "tests/frontend/login/login.feature:18",
+      "name": "Login with invalid credential",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "tests/frontend/login/login.feature:8",
+          "match": {
+            "arguments": [],
+            "location": "tests/steps/webcommonStep.py:6"
+          },
+          "name": "user go to login page",
+          "result": {
+            "duration": 2.2094240188598633,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "tests/frontend/login/login.feature:19",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/login/steps/login_step.py:25"
+          },
+          "name": "user enters the invalid username",
+          "result": {
+            "duration": 0.12474322319030762,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/login/login.feature:20",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/login/steps/login_step.py:30"
+          },
+          "name": "user enters the invalid password",
+          "result": {
+            "duration": 0.07305383682250977,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/login/login.feature:21",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/login/steps/login_step.py:15"
+          },
+          "name": "user click login button",
+          "result": {
+            "duration": 0.06138467788696289,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "tests/frontend/login/login.feature:22",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/login/steps/login_step.py:35"
+          },
+          "name": "user will get the error message",
+          "result": {
+            "duration": 0.03782200813293457,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "tcId002"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "tests/frontend/login/login.feature:3",
+  "name": "Login",
+  "status": "passed",
+  "tags": [
+    "smokeTest"
+  ]
+},
+
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "tests/frontend/order/buy_product.feature:4",
+      "name": "Add item to cart",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "tests/frontend/order/buy_product.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "tests/steps/webcommonStep.py:12"
+          },
+          "name": "user already on home page",
+          "result": {
+            "duration": 2.5581140518188477,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "tests/frontend/order/buy_product.feature:6",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/order/steps/order_step.py:7"
+          },
+          "name": "user pick backpack",
+          "result": {
+            "duration": 0.06871461868286133,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "tests/frontend/order/buy_product.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/order/steps/order_step.py:11"
+          },
+          "name": "item successfully picked",
+          "result": {
+            "duration": 0.027919530868530273,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "tcId005"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "tests/frontend/order/buy_product.feature:10",
+      "name": "Remove item from cart",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "tests/frontend/order/buy_product.feature:11",
+          "match": {
+            "arguments": [],
+            "location": "tests/steps/webcommonStep.py:12"
+          },
+          "name": "user already on home page",
+          "result": {
+            "duration": 2.5463974475860596,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "tests/frontend/order/buy_product.feature:12",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/order/steps/order_step.py:15"
+          },
+          "name": "user click remove",
+          "result": {
+            "duration": 1.1135826110839844,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "tests/frontend/order/buy_product.feature:13",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/order/steps/order_step.py:21"
+          },
+          "name": "item will be removed",
+          "result": {
+            "duration": 15.039414405822754,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "tests/frontend/order/buy_product.feature:1",
+  "name": "Buy the products",
+  "status": "passed",
+  "tags": []
+}
+]

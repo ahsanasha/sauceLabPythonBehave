@@ -1,0 +1,51 @@
+<testsuite name="frontend.order.buy_product.Buy the products" tests="2" errors="0" failures="2" skipped="0" time="7.281177" timestamp="2023-08-21T14:36:32.199309" hostname="LTP-ISP-003303"><testcase classname="frontend.order.buy_product.Buy the products" name="Checkout single item -- @1.1 " status="failed" time="4.497277"><failure type="NoneType" message="None">
+<![CDATA[
+Failing step: When user pick backpack ... undefined in 0.000s
+Location: tests/frontend/order/buy_product.feature:18
+None]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+
+  @tcId007
+  Scenario Outline: Checkout single item -- @1.1 
+    Given user already on home page ... passed in 4.497s
+    When user pick backpack ... undefined in 0.000s
+    And user open cart ... undefined in 0.000s
+    And user click checkout button ... undefined in 0.000s
+    And user fill the first name Ahsan ... undefined in 0.000s
+    And user fill the last name Khuluk ... undefined in 0.000s
+    And user fill postal code 40911 ... undefined in 0.000s
+    And user click continue button ... undefined in 0.000s
+    And user click finish button ... undefined in 0.000s
+    Then item successfully ordered ... undefined in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="frontend.order.buy_product.Buy the products" name="Checkout single item -- @1.2 " status="failed" time="2.7839"><failure type="NoneType" message="None">
+<![CDATA[
+Failing step: When user pick backpack ... undefined in 0.000s
+Location: tests/frontend/order/buy_product.feature:18
+None]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+
+  @tcId007
+  Scenario Outline: Checkout single item -- @1.2 
+    Given user already on home page ... passed in 2.784s
+    When user pick backpack ... undefined in 0.000s
+    And user open cart ... undefined in 0.000s
+    And user click checkout button ... undefined in 0.000s
+    And user fill the first name Zaelani ... undefined in 0.000s
+    And user fill the last name Zulkarnaen ... undefined in 0.000s
+    And user fill postal code 80451 ... undefined in 0.000s
+    And user click continue button ... undefined in 0.000s
+    And user click finish button ... undefined in 0.000s
+    Then item successfully ordered ... undefined in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

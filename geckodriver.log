@@ -1,0 +1,88 @@
+1692599127921	geckodriver	INFO	Listening on 127.0.0.1:58783
+1692599130978	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58784" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\AHSANK~1\\AppData\\Local\\Temp\\rust_mozprofilegWWKnc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692599132777	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692599132897	Marionette	INFO	Listening on port 58793
+Read port: 58793
+WebDriver BiDi listening on ws://127.0.0.1:58784
+1692599133014	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58784/devtools/browser/44fbe354-2a7f-4d79-b401-3422284f910e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+1692599200524	Marionette	INFO	Stopped listening on port 58793
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1692599217045	geckodriver	INFO	Listening on 127.0.0.1:58861
+1692599220092	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--window-size=1920,1080" "--i ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\AHSANK~1\\AppData\\Local\\Temp\\rust_mozprofileY7NYV0"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692599220517	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag -window-size\n"
+console.error: "Warning: unrecognized command line flag -inprivate\n"
+1692599220581	Marionette	INFO	Listening on port 58869
+WebDriver BiDi listening on ws://127.0.0.1:58862
+Read port: 58869
+1692599220949	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:58862/devtools/browser/d5015006-7e26-4217-b55a-5a5829e89a92
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+1692599226416	geckodriver	INFO	Listening on 127.0.0.1:58904
+1692599229501	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--window-size=1920,1080" "--i ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\AHSANK~1\\AppData\\Local\\Temp\\rust_mozprofilezAZ1cs"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692599229926	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag -window-size\n"
+console.error: "Warning: unrecognized command line flag -inprivate\n"
+1692599229988	Marionette	INFO	Listening on port 58912
+WebDriver BiDi listening on ws://127.0.0.1:58905
+Read port: 58912
+1692599230270	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:58905/devtools/browser/d9f4d976-8192-4ce9-9838-b67cbdfdc3be
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+1692599235231	geckodriver	INFO	Listening on 127.0.0.1:58942
+1692599238268	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--window-size=1920,1080" "--i ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\AHSANK~1\\AppData\\Local\\Temp\\rust_mozprofileyFoVEu"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692599238739	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag -window-size\n"
+console.error: "Warning: unrecognized command line flag -inprivate\n"
+1692599238827	Marionette	INFO	Listening on port 58957
+WebDriver BiDi listening on ws://127.0.0.1:58943
+Read port: 58957
+1692599239161	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:58943/devtools/browser/b215b6e9-6fff-4ee7-a9aa-2d390738de5f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+1692599244632	geckodriver	INFO	Listening on 127.0.0.1:58992
+1692599247696	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--window-size=1920,1080" "--i ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\AHSANK~1\\AppData\\Local\\Temp\\rust_mozprofile6mXp9f"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692599248131	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag -window-size\n"
+console.error: "Warning: unrecognized command line flag -inprivate\n"
+1692599248207	Marionette	INFO	Listening on port 59001
+WebDriver BiDi listening on ws://127.0.0.1:58993
+Read port: 59001
+1692599248507	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:58993/devtools/browser/6ce8a498-152c-4709-82ab-8e8792fa1887
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."

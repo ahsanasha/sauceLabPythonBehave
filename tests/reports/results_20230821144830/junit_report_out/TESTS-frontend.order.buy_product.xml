@@ -1,0 +1,101 @@
+<testsuite name="frontend.order.buy_product.Buy the products" tests="5" errors="0" failures="0" skipped="0" time="17.050954" timestamp="2023-08-21T14:48:59.206728" hostname="LTP-ISP-003303"><testcase classname="frontend.order.buy_product.Buy the products" name="Checkout single item -- @1.1 " status="passed" time="3.431237"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @tcId007
+  Scenario Outline: Checkout single item -- @1.1 
+    Given user already on home page ... passed in 2.893s
+    When user pick backpack ... passed in 0.067s
+    And user open cart ... passed in 0.074s
+    And user click checkout button ... passed in 0.053s
+    And user fill the first name Ahsan ... passed in 0.066s
+    And user fill the last name Khuluk ... passed in 0.078s
+    And user fill postal code 40911 ... passed in 0.070s
+    And user click continue button ... passed in 0.056s
+    And user click finish button ... passed in 0.045s
+    Then item successfully ordered ... passed in 0.030s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="frontend.order.buy_product.Buy the products" name="Checkout single item -- @1.2 " status="passed" time="3.233642"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @tcId007
+  Scenario Outline: Checkout single item -- @1.2 
+    Given user already on home page ... passed in 2.684s
+    When user pick backpack ... passed in 0.067s
+    And user open cart ... passed in 0.078s
+    And user click checkout button ... passed in 0.056s
+    And user fill the first name Zaelani ... passed in 0.069s
+    And user fill the last name Zulkarnaen ... passed in 0.084s
+    And user fill postal code 80451 ... passed in 0.060s
+    And user click continue button ... passed in 0.059s
+    And user click finish button ... passed in 0.052s
+    Then item successfully ordered ... passed in 0.024s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="frontend.order.buy_product.Buy the products" name="Checkout single item -- @1.3 " status="passed" time="3.317756"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @tcId007
+  Scenario Outline: Checkout single item -- @1.3 
+    Given user already on home page ... passed in 2.788s
+    When user pick backpack ... passed in 0.065s
+    And user open cart ... passed in 0.081s
+    And user click checkout button ... passed in 0.061s
+    And user fill the first name Ferdy ... passed in 0.068s
+    And user fill the last name Ciputra ... passed in 0.068s
+    And user fill postal code 46052 ... passed in 0.061s
+    And user click continue button ... passed in 0.053s
+    And user click finish button ... passed in 0.048s
+    Then item successfully ordered ... passed in 0.024s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="frontend.order.buy_product.Buy the products" name="Checkout single item -- @1.4 " status="passed" time="3.259909"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @tcId007
+  Scenario Outline: Checkout single item -- @1.4 
+    Given user already on home page ... passed in 2.711s
+    When user pick backpack ... passed in 0.056s
+    And user open cart ... passed in 0.071s
+    And user click checkout button ... passed in 0.062s
+    And user fill the first name Maryo ... passed in 0.072s
+    And user fill the last name Osan ... passed in 0.066s
+    And user fill postal code 12456 ... passed in 0.071s
+    And user click continue button ... passed in 0.064s
+    And user click finish button ... passed in 0.055s
+    Then item successfully ordered ... passed in 0.033s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="frontend.order.buy_product.Buy the products" name="Checkout single item -- @1.5 " status="passed" time="3.80841"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @tcId007
+  Scenario Outline: Checkout single item -- @1.5 
+    Given user already on home page ... passed in 3.247s
+    When user pick backpack ... passed in 0.066s
+    And user open cart ... passed in 0.059s
+    And user click checkout button ... passed in 0.071s
+    And user fill the first name ulfa ... passed in 0.073s
+    And user fill the last name Dwi ... passed in 0.070s
+    And user fill postal code 79954 ... passed in 0.081s
+    And user click continue button ... passed in 0.064s
+    And user click finish button ... passed in 0.049s
+    Then item successfully ordered ... passed in 0.028s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

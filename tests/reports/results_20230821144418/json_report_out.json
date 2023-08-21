@@ -1,0 +1,279 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario Outline",
+      "location": "tests/frontend/order/buy_product.feature:30",
+      "name": "Checkout single item -- @1.1 ",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "tests/frontend/order/buy_product.feature:17",
+          "match": {
+            "arguments": [],
+            "location": "tests/steps/webcommonStep.py:12"
+          },
+          "name": "user already on home page",
+          "result": {
+            "duration": 3.3278841972351074,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "tests/frontend/order/buy_product.feature:18",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/order/steps/order_step.py:10"
+          },
+          "name": "user pick backpack",
+          "result": {
+            "duration": 0.06970000267028809,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:19",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/order/steps/order_step.py:29"
+          },
+          "name": "user open cart",
+          "result": {
+            "duration": 0.059168338775634766,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:20",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/order/steps/order_step.py:34"
+          },
+          "name": "user click checkout button",
+          "result": {
+            "duration": 0.052611589431762695,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:21",
+          "match": {
+            "arguments": [
+              {
+                "name": "first_name",
+                "value": "Ahsan"
+              }
+            ],
+            "location": "tests/frontend/order/steps/order_step.py:39"
+          },
+          "name": "user fill the first name Ahsan",
+          "result": {
+            "duration": 0.06857943534851074,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:22",
+          "match": {
+            "arguments": [
+              {
+                "name": "last_name",
+                "value": "Khuluk"
+              }
+            ],
+            "location": "tests/frontend/order/steps/order_step.py:44"
+          },
+          "name": "user fill the last name Khuluk",
+          "result": {
+            "duration": 0.06825470924377441,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:23",
+          "name": "user fill postal code '40911'",
+          "result": {
+            "duration": 0,
+            "status": "undefined"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:24",
+          "name": "user click continue button",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:25",
+          "name": "user click finish button",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "tests/frontend/order/buy_product.feature:26",
+          "name": "item successfully ordered",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "tcId007"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario Outline",
+      "location": "tests/frontend/order/buy_product.feature:31",
+      "name": "Checkout single item -- @1.2 ",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "tests/frontend/order/buy_product.feature:17",
+          "match": {
+            "arguments": [],
+            "location": "tests/steps/webcommonStep.py:12"
+          },
+          "name": "user already on home page",
+          "result": {
+            "duration": 2.904935121536255,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "tests/frontend/order/buy_product.feature:18",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/order/steps/order_step.py:10"
+          },
+          "name": "user pick backpack",
+          "result": {
+            "duration": 0.07001614570617676,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:19",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/order/steps/order_step.py:29"
+          },
+          "name": "user open cart",
+          "result": {
+            "duration": 0.07219552993774414,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:20",
+          "match": {
+            "arguments": [],
+            "location": "tests/frontend/order/steps/order_step.py:34"
+          },
+          "name": "user click checkout button",
+          "result": {
+            "duration": 0.06345915794372559,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:21",
+          "match": {
+            "arguments": [
+              {
+                "name": "first_name",
+                "value": "Zaelani"
+              }
+            ],
+            "location": "tests/frontend/order/steps/order_step.py:39"
+          },
+          "name": "user fill the first name Zaelani",
+          "result": {
+            "duration": 0.07113504409790039,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:22",
+          "match": {
+            "arguments": [
+              {
+                "name": "last_name",
+                "value": "Zulkarnaen"
+              }
+            ],
+            "location": "tests/frontend/order/steps/order_step.py:44"
+          },
+          "name": "user fill the last name Zulkarnaen",
+          "result": {
+            "duration": 0.07305407524108887,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:23",
+          "name": "user fill postal code '80451'",
+          "result": {
+            "duration": 0,
+            "status": "undefined"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:24",
+          "name": "user click continue button",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:25",
+          "name": "user click finish button",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "tests/frontend/order/buy_product.feature:26",
+          "name": "item successfully ordered",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "tcId007"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "tests/frontend/order/buy_product.feature:1",
+  "name": "Buy the products",
+  "status": "failed",
+  "tags": []
+}
+]

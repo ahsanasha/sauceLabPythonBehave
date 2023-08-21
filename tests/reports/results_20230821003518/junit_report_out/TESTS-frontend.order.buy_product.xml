@@ -1,0 +1,74 @@
+<testsuite name="frontend.order.buy_product.Buy the products" tests="2" errors="1" failures="0" skipped="0" time="22.745296" timestamp="2023-08-21T00:35:55.963849" hostname="LTP-ISP-003303"><testcase classname="frontend.order.buy_product.Buy the products" name="Add item to cart" status="passed" time="4.021855"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @tcId005
+  Scenario: Add item to cart
+    Given user already on home page ... passed in 3.928s
+    When user pick backpack ... passed in 0.064s
+    Then item successfully picked ... passed in 0.030s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="frontend.order.buy_product.Buy the products" name="Remove item from cart" status="failed" time="18.72344"><error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[id=&quot;remove-sauce-labs-backpack&quot;]&quot;}&#10;  (Session info: chrome=116.0.5845.96); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Stacktrace:&#10;&#09;GetHandleVerifier [0x00007FF62F0552A2+57122]&#10;&#09;(No symbol) [0x00007FF62EFCEA92]&#10;&#09;(No symbol) [0x00007FF62EE9E3AB]&#10;&#09;(No symbol) [0x00007FF62EED7D3E]&#10;&#09;(No symbol) [0x00007FF62EED7E2C]&#10;&#09;(No symbol) [0x00007FF62EF10B67]&#10;&#09;(No symbol) [0x00007FF62EEF701F]&#10;&#09;(No symbol) [0x00007FF62EF0EB82]&#10;&#09;(No symbol) [0x00007FF62EEF6DB3]&#10;&#09;(No symbol) [0x00007FF62EECD2B1]&#10;&#09;(No symbol) [0x00007FF62EECE494]&#10;&#09;GetHandleVerifier [0x00007FF62F2FEF82+2849794]&#10;&#09;GetHandleVerifier [0x00007FF62F351D24+3189156]&#10;&#09;GetHandleVerifier [0x00007FF62F34ACAF+3160367]&#10;&#09;GetHandleVerifier [0x00007FF62F0E6D06+653702]&#10;&#09;(No symbol) [0x00007FF62EFDA208]&#10;&#09;(No symbol) [0x00007FF62EFD62C4]&#10;&#09;(No symbol) [0x00007FF62EFD63F6]&#10;&#09;(No symbol) [0x00007FF62EFC67A3]&#10;&#09;BaseThreadInitThunk [0x00007FF8B23826AD+29]&#10;&#09;RtlUserThreadStart [0x00007FF8B2E6AA68+40]&#10;">
+<![CDATA[
+Failing step: When user click remove ... failed in 15.039s
+Location: tests/frontend/order/buy_product.feature:12
+Traceback (most recent call last):
+  File "C:\Users\AhsanKhuluk\Documents\Automation\ahsanLab\gitHub\sauceLabPythonBehave\venv\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "C:\Users\AhsanKhuluk\Documents\Automation\ahsanLab\gitHub\sauceLabPythonBehave\venv\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "C:\Users\AhsanKhuluk\Documents\Automation\ahsanLab\gitHub\sauceLabPythonBehave\tests\frontend\order\steps\order_step.py", line 15, in remove_item
+    home_page.remove_item(context)
+  File "C:\Users\AhsanKhuluk\Documents\Automation\ahsanLab\gitHub\sauceLabPythonBehave\tests\pages\home_page.py", line 26, in remove_item
+    webcommon.click(context, remove_type, remove_string)
+  File "C:\Users\AhsanKhuluk\Documents\Automation\ahsanLab\gitHub\sauceLabPythonBehave\BDD_common\common_funcs\webcommon.py", line 141, in click
+    element = context_or_element.driver.find_element(locator_att, locator_text)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AhsanKhuluk\Documents\Automation\ahsanLab\gitHub\sauceLabPythonBehave\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 739, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AhsanKhuluk\Documents\Automation\ahsanLab\gitHub\sauceLabPythonBehave\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\AhsanKhuluk\Documents\Automation\ahsanLab\gitHub\sauceLabPythonBehave\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="remove-sauce-labs-backpack"]"}
+  (Session info: chrome=116.0.5845.96); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF62F0552A2+57122]
+	(No symbol) [0x00007FF62EFCEA92]
+	(No symbol) [0x00007FF62EE9E3AB]
+	(No symbol) [0x00007FF62EED7D3E]
+	(No symbol) [0x00007FF62EED7E2C]
+	(No symbol) [0x00007FF62EF10B67]
+	(No symbol) [0x00007FF62EEF701F]
+	(No symbol) [0x00007FF62EF0EB82]
+	(No symbol) [0x00007FF62EEF6DB3]
+	(No symbol) [0x00007FF62EECD2B1]
+	(No symbol) [0x00007FF62EECE494]
+	GetHandleVerifier [0x00007FF62F2FEF82+2849794]
+	GetHandleVerifier [0x00007FF62F351D24+3189156]
+	GetHandleVerifier [0x00007FF62F34ACAF+3160367]
+	GetHandleVerifier [0x00007FF62F0E6D06+653702]
+	(No symbol) [0x00007FF62EFDA208]
+	(No symbol) [0x00007FF62EFD62C4]
+	(No symbol) [0x00007FF62EFD63F6]
+	(No symbol) [0x00007FF62EFC67A3]
+	BaseThreadInitThunk [0x00007FF8B23826AD+29]
+	RtlUserThreadStart [0x00007FF8B2E6AA68+40]
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Remove item from cart
+    Given user already on home page ... passed in 3.685s
+    When user click remove ... failed in 15.039s
+    Then item will be removed ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

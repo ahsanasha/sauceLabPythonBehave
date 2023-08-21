@@ -1,0 +1,41 @@
+<testsuite name="frontend.order.buy_product.Buy the products" tests="2" errors="0" failures="0" skipped="0" time="7.577897" timestamp="2023-08-21T14:46:02.863833" hostname="LTP-ISP-003303"><testcase classname="frontend.order.buy_product.Buy the products" name="Checkout single item -- @1.1 " status="passed" time="4.035112"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @tcId007
+  Scenario Outline: Checkout single item -- @1.1 
+    Given user already on home page ... passed in 3.459s
+    When user pick backpack ... passed in 0.068s
+    And user open cart ... passed in 0.074s
+    And user click checkout button ... passed in 0.060s
+    And user fill the first name Ahsan ... passed in 0.065s
+    And user fill the last name Khuluk ... passed in 0.083s
+    And user fill postal code 40911 ... passed in 0.078s
+    And user click continue button ... passed in 0.061s
+    And user click finish button ... passed in 0.054s
+    Then item successfully ordered ... passed in 0.033s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="frontend.order.buy_product.Buy the products" name="Checkout single item -- @1.2 " status="passed" time="3.542785"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @tcId007
+  Scenario Outline: Checkout single item -- @1.2 
+    Given user already on home page ... passed in 2.882s
+    When user pick backpack ... passed in 0.091s
+    And user open cart ... passed in 0.088s
+    And user click checkout button ... passed in 0.074s
+    And user fill the first name Zaelani ... passed in 0.083s
+    And user fill the last name Zulkarnaen ... passed in 0.093s
+    And user fill postal code 80451 ... passed in 0.073s
+    And user click continue button ... passed in 0.065s
+    And user click finish button ... passed in 0.060s
+    Then item successfully ordered ... passed in 0.034s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

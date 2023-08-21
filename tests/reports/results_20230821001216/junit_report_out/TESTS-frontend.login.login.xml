@@ -1,0 +1,31 @@
+<testsuite name="frontend.login.login.Login" tests="2" errors="0" failures="0" skipped="0" time="7.61906" timestamp="2023-08-21T00:12:28.821388" hostname="LTP-ISP-003303"><testcase classname="frontend.login.login.Login" name="Login with valid credential" status="passed" time="4.414234"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @tcId001
+  Scenario: Login with valid credential
+    Given user go to login page ... passed in 4.017s
+    When user enters the username ... passed in 0.138s
+    And user enters the password ... passed in 0.093s
+    And user click login button ... passed in 0.131s
+    Then user should be navigated to the dashboard ... passed in 0.034s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="frontend.login.login.Login" name="Login with invalid credential" status="passed" time="3.204826"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @tcId002
+  Scenario: Login with invalid credential
+    Given user go to login page ... passed in 2.962s
+    When user enters the invalid username ... passed in 0.098s
+    And user enters the invalid password ... passed in 0.066s
+    And user click login button ... passed in 0.058s
+    Then user will get the error message ... passed in 0.021s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

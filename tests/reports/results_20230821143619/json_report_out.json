@@ -1,0 +1,179 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario Outline",
+      "location": "tests/frontend/order/buy_product.feature:30",
+      "name": "Checkout single item -- @1.1 ",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "tests/frontend/order/buy_product.feature:17",
+          "match": {
+            "arguments": [],
+            "location": "tests/steps/webcommonStep.py:12"
+          },
+          "name": "user already on home page",
+          "result": {
+            "duration": 4.49727725982666,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "tests/frontend/order/buy_product.feature:18",
+          "name": "user pick backpack",
+          "result": {
+            "duration": 0,
+            "status": "undefined"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:19",
+          "name": "user open cart",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:20",
+          "name": "user click checkout button",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:21",
+          "name": "user fill the first name Ahsan",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:22",
+          "name": "user fill the last name Khuluk",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:23",
+          "name": "user fill postal code 40911",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:24",
+          "name": "user click continue button",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:25",
+          "name": "user click finish button",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "tests/frontend/order/buy_product.feature:26",
+          "name": "item successfully ordered",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "tcId007"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario Outline",
+      "location": "tests/frontend/order/buy_product.feature:31",
+      "name": "Checkout single item -- @1.2 ",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "tests/frontend/order/buy_product.feature:17",
+          "match": {
+            "arguments": [],
+            "location": "tests/steps/webcommonStep.py:12"
+          },
+          "name": "user already on home page",
+          "result": {
+            "duration": 2.7838997840881348,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "tests/frontend/order/buy_product.feature:18",
+          "name": "user pick backpack",
+          "result": {
+            "duration": 0,
+            "status": "undefined"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:19",
+          "name": "user open cart",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:20",
+          "name": "user click checkout button",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:21",
+          "name": "user fill the first name Zaelani",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:22",
+          "name": "user fill the last name Zulkarnaen",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:23",
+          "name": "user fill postal code 80451",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:24",
+          "name": "user click continue button",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "tests/frontend/order/buy_product.feature:25",
+          "name": "user click finish button",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "tests/frontend/order/buy_product.feature:26",
+          "name": "item successfully ordered",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "tcId007"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "tests/frontend/order/buy_product.feature:1",
+  "name": "Buy the products",
+  "status": "failed",
+  "tags": []
+}
+]
