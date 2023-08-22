@@ -6,10 +6,13 @@ from tests.pages import cart
 from tests.pages import self_information
 from tests.pages import checkout_overview
 
-
 @when("user pick backpack")
 def pick_item(context):
-    home_page.user_pick_item(context)
+    home_page.user_pick_backpack(context)
+
+@when("user pick red shirt")
+def pick_redshirt(context):
+    home_page.user_pick_redshirt(context)
 
 @then("item successfully picked")
 def item_successfully_picked(context):
@@ -17,7 +20,7 @@ def item_successfully_picked(context):
 
 @when("user click remove")
 def remove_item(context):
-    home_page.user_pick_item(context)
+    pick_item(context)
     time.sleep(1)
     home_page.remove_item(context)
 
@@ -25,31 +28,25 @@ def remove_item(context):
 def item_removed(context):
     home_page.verify_remove_item(context)
 
-
 @when("user open cart")
 def open_cart(context):
     home_page.click_checkout_icon(context)
-
 
 @when("user click checkout button")
 def click_checkout_button(context):
     cart.click_checkout(context)
 
-
 @when("user fill the first name {first_name}")
 def fill_first_name(context, first_name):
     self_information.fill_first_name(context, first_name)
-
 
 @when("user fill the last name {last_name}")
 def fill_last_name(context, last_name):
     self_information.fill_last_name(context, last_name)
 
-
 @when("user fill postal code {postal_code}")
 def fill_postal_code(context, postal_code):
     self_information.fill_postal_code(context, postal_code)
-
 
 @when("user click continue button")
 def click_continue(context):
