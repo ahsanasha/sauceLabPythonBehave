@@ -1,8 +1,1 @@
-#tests/reports
-
-#
-# IntelliJ
-#
-*.iml
-.idea/*
-!.idea/runConfigurations/
+tests/reports
