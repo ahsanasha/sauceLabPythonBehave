@@ -14,6 +14,11 @@ def pick_item(context):
 def pick_redshirt(context):
     home_page.user_pick_redshirt(context)
 
+@when("user pick {qty} random items")
+def pick_redshirt(context, qty):
+    home_page.user_pick_random_items(context, qty)
+
+    
 @then("item successfully picked")
 def item_successfully_picked(context):
     home_page.verify_add_item(context)

@@ -13,7 +13,8 @@ HOME_PAGE = {
     'red_shirt': {'type': 'id', 'locator': 'add-to-cart-test.allthethings()-t-shirt-(red)'},
     'cart': {'type': 'id', 'locator': 'shopping_cart_container'},
     'cart_badge': {'type': 'class name', 'locator': 'shopping_cart_badge'},
-    'remove': {'type': 'id', 'locator': 'remove-sauce-labs-backpack'}
+    'remove': {'type': 'id', 'locator': 'remove-sauce-labs-backpack'},
+    'add_to_cart': {'type': 'css selector', 'locator': 'button[data-test*=add-to-cart-sauce]'}
 }
 
 CART_PAGE = {
@@ -46,3 +47,4 @@ CHECKOUT_OVERVIEW_PAGE = {
 COMPLETE_PAGE = {
     'back_to_products': {'type': 'id', 'locator': 'back-to-products'}
 }
+

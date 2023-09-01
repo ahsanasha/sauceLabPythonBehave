@@ -4,6 +4,7 @@ from BDD_common.common_configs import locators_config
 import time
 import logging as logger
 
+
 def get_user_name(context):
     return url_config.PROPERTIES.get('user')
 
@@ -11,8 +12,8 @@ def get_user_name(context):
 def get_password(context):
     return url_config.PROPERTIES.get('password')
 
-def go_to(context, **kwargs):
 
+def go_to(context, **kwargs):
     base_url = url_config.URLCONFIG.get('base_url')
     # if not location.startswith('https'):
     #     _url = urlconfig.URLCONFIG.get(location)
@@ -28,7 +29,7 @@ def go_to(context, **kwargs):
         options.add_argument('--window-size=1920,1080')
         options.add_argument('--incognito')
         context.driver = webdriver.Chrome(options=options)
-    elif browser.lower() == 'headlesschrome':
+    elif browser.lower() == 'headless_chrome':
         options = webdriver.ChromeOptions()
         options.add_argument('--headless')
         options.add_argument('--window-size=1920,1080')
@@ -49,7 +50,7 @@ def go_to(context, **kwargs):
 
     # clean the url and go to the url
     base_url = base_url.strip()
-    logger.info(f"Navigate to URL: {base_url}")
+    # logger.info(f"Navigate to URL: {base_url}")
     # import pdb;
     # pdb.set_trace()
     context.driver.get(base_url)
@@ -100,8 +101,34 @@ def find_elements(context, locator_attribute, locator_text):
 
 
 # ======================================================================================#
-def is_element_visible(element):
+def assert_current_url(context, expected_url):
+    current_url = context.driver.current_url
 
+    if not expected_url.startswith('http') or not expected_url.startswith('https'):
+        expected_url = 'https://' + expected_url + '/'
+
+    assert current_url == expected_url, "The current url is not as expected."
+    print("The page url is as expected.")
+
+
+# ======================================================================================#
+def url_contains(context, text):
+    current_url = context.driver.current_url
+    if text in current_url:
+        return True
+    else:
+        return False
+
+
+# ======================================================================================#
+
+def assert_url_contains(context, text):
+    contains = url_contains(context, text)
+    assert contains, f"Current url '{context.driver.current_url}' does not contain test '{text}'."
+
+
+# ======================================================================================#
+def is_element_visible(element):
     # Checks if element is visible and returns True or False
 
     if element.is_displayed():
@@ -112,7 +139,6 @@ def is_element_visible(element):
 
 # ======================================================================================#
 def assert_element_visible(context_or_element, locator_att=None, locator_text=None):
-
     # Function to check if the passed in element is visible.
     # Raises and exception if it is not exception.
 
