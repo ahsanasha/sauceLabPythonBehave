@@ -7,7 +7,8 @@ import random
 
 def should_be_navigated_to_dashboard(context):
     webcommon.assert_element_visible(context, HOME_PAGE['shopping_cart']['type'], HOME_PAGE['shopping_cart']['locator'])
-    webcommon.assert_url_contains(context,  '/inventory.html')
+    webcommon.assert_url_contains(context, '/inventory.html')
+
 
 def user_pick_backpack(context):
     webcommon.click(context, HOME_PAGE['backpack']['type'], HOME_PAGE['backpack']['locator'])
@@ -27,7 +28,8 @@ def user_pick_random_items(context, qty):
 
     for i in random_button:
         webcommon.click(context, cart_btn_type, cart_btn_text)
-        time.sleep(1)
+        time.sleep(0.5)
+
 
 def verify_add_item(context):
     webcommon.assert_element_contains_text(context, '1', HOME_PAGE['cart_badge']['type'],
@@ -55,3 +57,11 @@ def click_checkout_icon(context):
     webcommon.click(context, HOME_PAGE['cart']['type'], HOME_PAGE['cart']['locator'])
 
     webcommon.assert_url_contains(context, '/cart.html')
+
+
+def open_menu(context):
+    webcommon.click(context, HOME_PAGE['menu_icon']['type'], HOME_PAGE['menu_icon']['locator'])
+
+
+def click_logout(context):
+    webcommon.click(context, HOME_PAGE['logout_submenu']['type'], HOME_PAGE['logout_submenu']['locator'])

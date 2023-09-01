@@ -23,3 +23,7 @@ def enter_wrong_pass(context):
 
 def user_receive_error_message(context):
     webcommon.assert_element_visible(context, LOGIN_PAGE['error_message']['type'], LOGIN_PAGE['error_message']['locator'])
+
+
+def verify_login_page(context):
+    webcommon.assert_element_visible(context, LOGIN_PAGE['login_container']['type'],LOGIN_PAGE['login_container']['locator'])

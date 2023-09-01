@@ -4,7 +4,8 @@ LOGIN_PAGE = {
     'username': {'type': 'id', 'locator': 'user-name'},
     'password': {'type': 'id', 'locator': 'password'},
     'login_button': {'type': 'id', 'locator': 'login-button'},
-    'error_message': {'type': 'css selector', 'locator': 'h3[data-test="error"]'}
+    'error_message': {'type': 'css selector', 'locator': 'h3[data-test="error"]'},
+    'login_container': {'type': 'id', 'locator': 'login_button_container'}
 }
 
 HOME_PAGE = {
@@ -14,7 +15,13 @@ HOME_PAGE = {
     'cart': {'type': 'id', 'locator': 'shopping_cart_container'},
     'cart_badge': {'type': 'class name', 'locator': 'shopping_cart_badge'},
     'remove': {'type': 'id', 'locator': 'remove-sauce-labs-backpack'},
-    'add_to_cart': {'type': 'css selector', 'locator': 'button[data-test*=add-to-cart-sauce]'}
+    'add_to_cart': {'type': 'css selector', 'locator': 'button[data-test*=add-to-cart-sauce]'},
+    'menu_icon': {'type': 'id', 'locator': 'react-burger-menu-btn'},
+    'all_item_submenu': {'type': 'id', 'locator': 'inventory_sidebar_link'},
+    'about_submenu': {'type': 'id', 'locator': 'about_sidebar_link'},
+    'logout_submenu': {'type': 'id', 'locator': 'logout_sidebar_link'},
+    'reset_app_submenu': {'type': 'id', 'locator': 'reset_sidebar_link'}
+
 }
 
 CART_PAGE = {
@@ -47,4 +54,3 @@ CHECKOUT_OVERVIEW_PAGE = {
 COMPLETE_PAGE = {
     'back_to_products': {'type': 'id', 'locator': 'back-to-products'}
 }
-

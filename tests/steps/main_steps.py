@@ -1,4 +1,5 @@
 from tests.frontend.login.steps import login_step
+from tests.frontend.logout.steps import logout_step
 from tests.frontend.order.steps import order_step
 from tests.pages import cart
 from tests.pages import home_page

@@ -12,7 +12,7 @@ def enter_password(context):
     login_page.enter_password(context)
 
 
-@when(u'user click login button')
+@when(u'user clicks login button')
 def click_login_button(context):
     login_page.click_login_button(context)
 
@@ -35,3 +35,5 @@ def enter_wrong_pass(context):
 @then("user will get the error message")
 def user_receive_error_message(context):
     login_page.user_receive_error_message(context)
+
+
