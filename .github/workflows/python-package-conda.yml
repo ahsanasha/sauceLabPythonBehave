@@ -24,4 +24,3 @@ jobs:
     - name: Test with pytest
       run: |
         behave tests -f allure_behave.formatter:AllureFormatter -o tests\reports
-        allure serve tests\reports
