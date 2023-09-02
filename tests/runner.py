@@ -2,8 +2,7 @@
 # cd to orangeHRMPython>
 # python tests/runner.py --test_dir=tests --run_allure=true
 # python tests/runner.py --test_dir=tests --run_allure=true --behave_options="-k -t tcId001"
-
-
+import logging
 import subprocess
 import argparse
 from datetime import datetime
@@ -79,13 +78,14 @@ if __name__ == '__main__':
     junit_out_dir = os.path.join(output_dir, 'junit_report_out')
     allure_out_dir = os.path.join(output_dir, 'allure_report_out')
 
-    command = f'behave -k --capture -f json.pretty -o "{json_out_dir}" ' \
+    command = f'behave -k --logging-level INFO --summary -f json.pretty -o "{json_out_dir}" ' \
               f'--junit --junit-directory "{junit_out_dir}" ' \
               f'-f allure_behave.formatter:AllureFormatter -o {allure_out_dir} ' \
               f'{behave_options} ' \
               f'{test_dir} '
 
-    print(f"Running command: {command}")
+    # print(f"Running command: {command}")
+    # logging.info(f"Running command: {command}")
 
     rs = subprocess.run(command, shell=True)
 

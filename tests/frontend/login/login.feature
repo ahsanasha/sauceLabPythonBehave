@@ -11,12 +11,12 @@ Feature: Login
   Scenario: Login with valid credential
     When user enters the username
     And user enters the password
-    And user click login button
+    And user clicks login button
     Then user should be navigated to the dashboard
 
   @tcId002
   Scenario: Login with invalid credential
     When user enters the invalid username
     And user enters the invalid password
-    And user click login button
+    And user clicks login button
     Then user will get the error message

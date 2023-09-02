@@ -20,5 +20,9 @@
   {
     "name": "Test defects",
     "matchedStatuses": ["broken"]
+  },
+  {
+    "name": "No major defects",
+    "matchedStatuses": ["passed"]
   }
 ]
