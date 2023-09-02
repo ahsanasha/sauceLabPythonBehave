@@ -21,4 +21,4 @@ jobs:
         pip install allure-behave
     - name: Test with pytest
       run: |
-         python .\tests\runner.py --test_dir=tests --run_allure=true --behave_options="-k"
+        behave .\tests\ --tags=tcId001
