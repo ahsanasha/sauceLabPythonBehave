@@ -24,26 +24,29 @@ jobs:
     - name: Test with behave
       run: |
         python tests/runner.py --test_dir=tests --run_allure=true --behave_options="-k -D browser=headless_chrome"
-    - name: Allure generate report 
-  # You may pin to the exact commit or the version.
-  # uses: yhrunyk/action-allure-generate-report@4989321d11790c05c69750d1bbb3ea374ba06baa
-      uses: yhrunyk/action-allure-generate-report@master
+    - name: Get Allure history
+      uses: actions/checkout@v2
+      if: always()
+      continue-on-error: true
+      with: 
+        ref: master
+        path: master
+
+    - name: Allure report action from marketplace
+      uses: simple-elf/allure-report-action@master
+      if: always()
+      id: allure-report
       with:
-        results-dir: tests/results
-    # Allure report target dir
-        report-dir: tests/results
+        allure_results: tests/results
+        gh-pages: master
+        allure_report: allure-report
+        allure_history: allure-history
+        
     - name: Allure Report Upload for GitHub Actions
-  # You may pin to the exact commit or the version.
-  # uses: ALJAZEERAPLUS/allure-report-upload-action@19680c12288b7b5a2e3745ca3a49ee07192d0b97
-      uses: ALJAZEERAPLUS/allure-report-upload-action@v1.2
-      with:
-    # Allure results directory
-        allure-results-dir: tests/results
-    # Allure report target dir
-    # The URL of allure server
-        allure-server-url: http://localhost:5050
-    # The ID of allure project
-        allure-project-id: 001
-    # The Github Actions Workflow Run ID
-        run-id: ${{ github.run_id }}
+      if: always()
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        PERSONAL_TOKEN: ${{secret.GITHUB_TOKEN}}
+        PUBLISH_BRANCH: master
+        PUBLISH_DIR: allure-history
     
