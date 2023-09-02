@@ -1,3 +1,2 @@
-tests/reports/*.json
-tests/reports/result_*
-
+#tests/reports/*.json
+#tests/reports/result_*
