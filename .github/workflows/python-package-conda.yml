@@ -21,6 +21,6 @@ jobs:
         pip install allure-behave
         pip install behave
         pip install selenium
-    - name: Test with pytest
+    - name: Test with behave
       run: |
-        behave tests -f allure_behave.formatter:AllureFormatter -o tests\reports -D browser=headless_chrome
+        python tests\runner.py --test_dir=tests --run_allure=false --behave_options="-k -D browser=headless_chrome"
