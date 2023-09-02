@@ -23,5 +23,4 @@ jobs:
         pip install selenium
     - name: Test with behave
       run: |
-        python tests/runner.py --test_dir=tests --run_allure=false --behave_options="-k -D browser=headless_chrome"
-        allure serve tests/reports
+        python tests/runner.py --test_dir=tests --run_allure=true --behave_options="-k -D browser=headless_chrome"
