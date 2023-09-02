@@ -19,6 +19,8 @@ jobs:
         python setup.py install
         python setup.py develop
         pip install allure-behave
+        pip install behave
+        pip install selenium
     - name: Test with pytest
       run: |
         behave tests
