@@ -1,2 +1,2 @@
-BDDCommon
+BDD_common
 tests
