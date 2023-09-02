@@ -29,16 +29,16 @@ jobs:
   # uses: yhrunyk/action-allure-generate-report@4989321d11790c05c69750d1bbb3ea374ba06baa
       uses: yhrunyk/action-allure-generate-report@master
       with:
-        results-dir: /home/runner/work/sauceLabPythonBehave/sauceLabPythonBehave/tests/reports/results_20230902134213/allure_report_out
+        results-dir: tests/results
     # Allure report target dir
-        report-dir: /home/runner/work/sauceLabPythonBehave/sauceLabPythonBehave/tests/reports/results_20230902134213/allure_report_out
+        report-dir: tests/results
     - name: Allure Report Upload for GitHub Actions
   # You may pin to the exact commit or the version.
   # uses: ALJAZEERAPLUS/allure-report-upload-action@19680c12288b7b5a2e3745ca3a49ee07192d0b97
       uses: ALJAZEERAPLUS/allure-report-upload-action@v1.2
       with:
     # Allure results directory
-        allure-results-dir: /home/runner/work/sauceLabPythonBehave/sauceLabPythonBehave/tests/reports/results_20230902134213/allure_report_out
+        allure-results-dir: tests/results
     # Allure report target dir
     # The URL of allure server
         allure-server-url: http://localhost:5050
