@@ -24,22 +24,13 @@ jobs:
     - name: Test with behave
       run: |
         python tests/runner.py --test_dir=tests --run_allure=true --behave_options="-k -D browser=headless_chrome"
-    - name: Get Allure history
-      uses: actions/checkout@v2
-      if: always()
-      continue-on-error: true
-      with: 
-        ref: master
-        path: master
 
-    - name: Allure report action from marketplace
-      uses: simple-elf/allure-report-action@master
-      if: always()
-      id: allure-report
+    - name: Upload Allure Results
+      id: upload-allure-results
+      uses: ALJAZEERAPLUS/allure-report-upload-action@v1.0
       with:
-        allure_results: tests/results
-        gh-pages: master
-        allure_report: allure-report
-        allure_history: allure-history
+          allure-results-dir: tests/reports
+          allure-project-id: report${{ github.run_id }}
+          allure-server-url: http://allure-server.aj-plus.net/allure-docker-service
         
     
