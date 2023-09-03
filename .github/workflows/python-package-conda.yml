@@ -18,7 +18,6 @@ jobs:
       run: |
         python setup.py install
         python setup.py develop
-        pip install allure-behave
         pip install behave
         pip install selenium
     - name: Test with behave
@@ -29,8 +28,10 @@ jobs:
       id: upload-allure-results
       uses: ALJAZEERAPLUS/allure-report-upload-action@v1.0
       with:
-          allure-results-dir: tests/reports/
-          allure-project-id: report${{ github.run_id }}
-          allure-server-url: http://localhost:5050
-        
+          allure-results-dir: tests/e2e/output/report
+          allure-project-id: ump-android
+          allure-server-url: http://allure-server.aj-plus.net/allure-docker-service
+          
+    - run: echo ::set-output name=url_output::${{ steps.upload-allure-results.outputs.allure-report-url }}
+      id: get_job_url
     
