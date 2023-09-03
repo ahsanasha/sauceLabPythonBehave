@@ -31,6 +31,6 @@ jobs:
       with:
           allure-results-dir: tests/reports/
           allure-project-id: report${{ github.run_id }}
-          allure-server-url: http://allure-server.aj-plus.net/allure-docker-service
+          allure-server-url: http://localhost:5050
         
     
