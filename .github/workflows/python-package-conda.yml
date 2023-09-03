@@ -20,6 +20,7 @@ jobs:
         python setup.py develop
         pip install behave
         pip install selenium
+        pip install allure-behave
     - name: Test with behave
       run: |
         python tests/runner.py --test_dir=tests --run_allure=true --behave_options="-k -D browser=headless_chrome -t tcId001"
@@ -28,7 +29,7 @@ jobs:
       id: upload-allure-results
       uses: ALJAZEERAPLUS/allure-report-upload-action@v1.0
       with:
-          allure-results-dir: tests/reports
+          allure-results-dir: tests/reports/
           allure-project-id: ump-web
           allure-server-url: http://allure-server.aj-plus.net/allure-docker-service
           
