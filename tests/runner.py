@@ -15,7 +15,7 @@ def add_drivers_to_path():
     print("Adding webdrivers to path.")
     curr_file_path = pathlib.Path(__file__).parent.absolute()
 
-    if platform.system() == 'Darwin':
+    if platform.system() == 'Mac':
         webdriver_path = os.path.join(curr_file_path, 'webdrivers', 'mac')
     elif platform.system() == 'Windows':
         webdriver_path = os.path.join(curr_file_path, 'webdrivers', 'wimdows')
