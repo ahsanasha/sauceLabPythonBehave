@@ -28,8 +28,8 @@ jobs:
       id: upload-allure-results
       uses: ALJAZEERAPLUS/allure-report-upload-action@v1.0
       with:
-          allure-results-dir: tests/e2e/output/report
-          allure-project-id: ump-android
+          allure-results-dir: tests/reports
+          allure-project-id: ump-web
           allure-server-url: http://allure-server.aj-plus.net/allure-docker-service
           
     - run: echo ::set-output name=url_output::${{ steps.upload-allure-results.outputs.allure-report-url }}
