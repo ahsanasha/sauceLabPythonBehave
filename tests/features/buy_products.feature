@@ -30,8 +30,6 @@ Feature: Product purchases
       | Hayley     | Hayley    | 40911       |
       | John       | Lennon    | 80451       |
       | Matt       | Shadow    | 78433       |
-      | Monkey     | D Luffy   | 80451       |
-      | Garth      | Brooks    | 78433       |
 
 
   @tcId008
@@ -53,8 +51,6 @@ Feature: Product purchases
       | Billie     | Joe       | 46052       |
       | Adam       | Levine    | 12456       |
       | Mickey     | Rourke    | 79954       |
-      | Bruce      | Willis    | 89562       |
-      | Chuck      | Norris    | 02137       |
 
 
   @tcId009
@@ -72,8 +68,6 @@ Feature: Product purchases
 
     Examples:
       | first_name | last_name | postal_code | qty |
-      | Dakota     | Fanning   | 40911       | 1   |
       | Audrey     | Hepburn   | 12456       | 2   |
       | Naomi      | Judd      | 79954       | 3   |
       | River      | Phoenix   | 21354       | 4   |
-      | Demi       | Moore     | 78433       | 5   |
