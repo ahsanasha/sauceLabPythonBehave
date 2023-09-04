@@ -24,7 +24,7 @@
 
 6. Run behave test
 	- behave .\tests\ (execute all feature)
-	- behave .\tests\ --tags=tcId001 (execute specific scenario)
+	- behave .\tests\ --tags=tcId001 -D browser=headless_chrome (execute specific scenario)
 	- behave .\tests\ --logging-level=LOGGING_LEVEL (execute specific scenario)
     - behave .\tests\ -e login.feature (execute all exclude specific feature file)
 	- behave .\tests\ -f allure_behave.formatter:AllureFormatter -o .\tests\reports  (execute all feature and generate allure report with name "report")
@@ -34,4 +34,4 @@
 	- python .\tests\runner.py --test_dir=tests --run_allure=true (generate allure report)
     - python .\tests\runner.py --test_dir=tests --run_allure=true --behave_options="-k -t tcId001" (run with tags)
     - python .\tests\runner.py --test_dir=tests --run_allure=false --behave_options="-k -D browser=firefox" (run with specific browser, check in webcommon.py on go_to function)
-    - python .\tests\runner.py --test_dir=tests --run_allure=false --behave_options="-k -D browser=headless_chrome" (run with specific browser, check in webcommon.py on go_to function)
+    - python .\tests\runner.py --test_dir=tests --run_allure=false --behave_options="-k -t tcId001 -D browser=headless_chrome" (run with specific browser, check in webcommon.py on go_to function)

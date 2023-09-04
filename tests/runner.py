@@ -84,8 +84,8 @@ if __name__ == '__main__':
               f'{behave_options} ' \
               f'{test_dir} '
 
-    # print(f"Running command: {command}")
-    # logging.info(f"Running command: {command}")
+    print(f"Running command: {command}")
+    logging.info(f"Running command: {command}")
 
     rs = subprocess.run(command, shell=True)
 
