@@ -29,7 +29,6 @@ Feature: Product purchases
       | first_name | last_name | postal_code |
       | Hayley     | Hayley    | 40911       |
       | John       | Lennon    | 80451       |
-      | Matt       | Shadow    | 78433       |
 
 
   @tcId008
@@ -50,7 +49,6 @@ Feature: Product purchases
       | first_name | last_name | postal_code |
       | Billie     | Joe       | 46052       |
       | Adam       | Levine    | 12456       |
-      | Mickey     | Rourke    | 79954       |
 
 
   @tcId009
