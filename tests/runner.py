@@ -56,10 +56,6 @@ def create_output_directory(prefix='results_', report_path='reports'):
     return dir_to_create
 
 if __name__ == '__main__':
-    rs = subprocess.run('behave', shell =True)
-    # if rs.returncode != 0:
-    #     raise Exception("E")
-
     run_id = get_unique_run_id()
 
     parser = argparse.ArgumentParser()
@@ -85,8 +81,7 @@ if __name__ == '__main__':
               f'{test_dir} '
 
     print(f"Running command: {command}")
-    logging.info(f"Running command: {command}")
-
+    # rs = subprocess.run('behave', shell =True)
     rs = subprocess.run(command, shell=True)
 
     print(f"JSON Report directory: {json_out_dir}")
