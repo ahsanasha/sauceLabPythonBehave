@@ -5,13 +5,14 @@
 import logging
 import subprocess
 import argparse
+import time
 from datetime import datetime
 import os
 import pathlib
 import platform
 
-def add_drivers_to_path():
 
+def add_drivers_to_path():
     print("Adding webdrivers to path.")
     curr_file_path = pathlib.Path(__file__).parent.absolute()
 
@@ -28,8 +29,8 @@ def add_drivers_to_path():
     new_path = webdriver_path + ':' + current_path
     os.environ['PATH'] = new_path
 
-def get_unique_run_id():
 
+def get_unique_run_id():
     if os.environ.get("BUILD_NUMBER"):
         unique_run_id = os.environ.get("BUILD_NUMBER")
     elif os.environ.get("CUSTOM_BUILD_NUMBER"):
@@ -41,19 +42,27 @@ def get_unique_run_id():
 
     return unique_run_id
 
-def create_output_directory(prefix='results_', report_path='reports'):
 
-    global run_id
-    if not run_id:
-        raise Exception("Variable 'run_id' is not set. Unable to create output directory")
+def create_output_directory(prefix='results', report_path='reports'):
+    # global run_id
+    # if not run_id:
+    #     raise Exception("Variable 'run_id' is not set. Unable to create output directory")
 
     curr_file_path = pathlib.Path(__file__).parent.absolute() / report_path
-    dir_to_create = os.path.join(curr_file_path, prefix + str(run_id))
-    os.mkdir(dir_to_create)
+    dir_to_create = os.path.join(curr_file_path, prefix)
+    # dir_to_create = os.path.join(curr_file_path, prefix + str(run_id))
+    # os.mkdir(dir_to_create)
+    # if os.path.exists(prefix):
+    #     os.remove(dir_to_create)
+    #     time.sleep(1)
+    #     os.mkdir(dir_to_create)
+    # else:
+    os.makedirs(dir_to_create, exist_ok= True)
 
     print(f"Created output directory: {dir_to_create}")
 
     return dir_to_create
+
 
 if __name__ == '__main__':
     run_id = get_unique_run_id()
