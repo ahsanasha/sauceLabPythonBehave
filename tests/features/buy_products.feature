@@ -29,7 +29,7 @@ Feature: Product purchases
       | first_name | last_name | postal_code |
       | Hayley     | Hayley    | 40911       |
       | John       | Lennon    | 80451       |
-
+      | Marsh      | Mellow    | 09213       |
 
   @tcId008
   Scenario Outline: Checkout multiple item
@@ -49,6 +49,7 @@ Feature: Product purchases
       | first_name | last_name | postal_code |
       | Billie     | Joe       | 46052       |
       | Adam       | Levine    | 12456       |
+      | Budy       | Dalton    | 24563       |
 
 
   @tcId009
