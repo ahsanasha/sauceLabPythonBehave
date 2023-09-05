@@ -1,0 +1,38 @@
+name: Python Package using Conda
+
+on: [push]
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 5
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.10'
+    - name: Install dependencies
+      run: |
+        python setup.py install
+        python setup.py develop
+        pip install behave
+        pip install selenium
+        pip install allure-behave
+    - name: Test with behave
+      run: |
+        python tests/runner.py --test_dir=tests --run_allure=true --behave_options="-k -D browser=headless_chrome -t tcId001"
+
+    - name: Upload Allure Results
+      id: upload-allure-results
+      uses: ALJAZEERAPLUS/allure-report-upload-action@v1.0
+      with:
+          allure-results-dir: tests/reports/
+          allure-project-id: ump-web
+          allure-server-url: http://allure-server.aj-plus.net/allure-docker-service
+          
+    - run: echo ::set-output name=url_output::${{ steps.upload-allure-results.outputs.allure-report-url }}
+      id: get_job_url
+    
